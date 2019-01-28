@@ -1,0 +1,15 @@
+<h1>List of People</h1>
+
+<div class="persons" *ngIf="personsList">
+
+    <div class="person" *ngFor="let person of personsList">
+        <div class="person__name">{{person.name}}</div>
+        <div class="person__email">{{person.email}}</div>
+        <div class="options">
+           <button class="btn btn-danger" (click)="deletePerson(person)">
+             <i class="fa fa-trash"></i>
+            </button>
+        </div>
+    </div>
+</div>
+

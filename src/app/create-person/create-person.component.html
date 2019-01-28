@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Create Person</h1>
+
+    <div class="create">
+  
+      <div class="create__field-name">Name:</div>
+      <input type="text" name="name" placeholder="Name" [(ngModel)]="newPerson.name" class="create__name" >
+  
+      <div class="create__field-name">Email:</div>
+      <input type="email" name="email" placeholder="Email" [(ngModel)]="newPerson.email" class="create__email">
+  
+    </div>
+    <button type="submit" class="btn btn-primary m-5" (click)="create()">Submit</button>
+  </div>
+  
